@@ -1,0 +1,19 @@
+development: &default
+  adapter: mysql2
+  encoding: utf8
+  database: basic-auth-rails
+  username: root
+  password: secret
+  wait_timeout: 300
+  checkout_timeout: 15
+  host:
+
+test:
+  <<: *default
+  database: basic-auth-rails_test
+
+production:
+  <<: *default
+  database: basic-auth-rails_production
+  username: basic-auth-rails
+  password: <%= ENV['BASIC-AUTH-RAILS_DATABASE_PASSWORD'] %>
