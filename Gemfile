@@ -13,7 +13,7 @@ gem 'turbolinks'
 
 gem 'jbuilder', '~> 2.0'
 
-gem 'devise', '~> 3.2'
+gem 'devise', '~> 4.7'
 
 gem 'jwt', '~> 2.2', '>= 2.2.1'
 
